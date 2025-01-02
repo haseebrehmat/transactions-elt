@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+.venv/
+env/
+.env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Docker & Persistence
+data/minio/*
+!data/minio/.gitkeep
+data/iceberg/*
+!data/iceberg/.gitkeep
+
+# Airflow
+logs/
+airflow.db
+unittests.cfg
+webserver_config.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+.idea/
+.vscode/
+.history/

@@ -1,0 +1,11 @@
+.git
+.vscode
+.idea
+__pycache__
+*.pyc
+venv
+.venv
+data
+logs
+dashboard/node_modules
+/Users/dev/.gemini
