@@ -34,7 +34,7 @@ The pipeline is structured into **seven discrete stages**, each ensuring data in
 
 ## **⚡ Operational Excellence**
 
-### **1. Rapid Deployment**
+### **1. Rapid Setup**
 Spin up the entire financial ecosystem in minutes:
 ```bash
 docker-compose up -d
@@ -46,6 +46,15 @@ Access the **Premium Sentinel Dashboard** at `http://localhost:8501`.
 - **Full-Spectrum Observability**: Toggle between all 7 pipeline stages with instant data previews.
 - **Executive Analytics**: Real-time visualization of transaction volume and customer activity.
 - **Performance Heartbeat**: Real-time sync status and system health monitoring.
+
+### **3. Automated Configuration**
+The infrastructure automatically configures the Spark connection. However, if you need to verify it manually in the Airflow UI (**Admin -> Connections**):
+- **Conn ID:** `spark_default`
+- **Conn Type:** `Spark`
+- **Host:** `spark-master`
+- **Port:** `7077`
+
+> **Note:** Do NOT use container IDs for the host. Use the service name `spark-master` to maintain portability across different Docker environments.
 
 ---
 
@@ -59,6 +68,8 @@ Access the **Premium Sentinel Dashboard** at `http://localhost:8501`.
 | **Spark Master** | `http://localhost:8080` | *N/A (Public)* |
 
 ---
+
+## **🔍 Observability & Result Inspection**
 
 ## **🏗 Engineering Best Practices Implemented**
 
