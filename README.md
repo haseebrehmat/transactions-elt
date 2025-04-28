@@ -87,6 +87,7 @@ The infrastructure automatically configures the Spark connection. However, if yo
 - `/dashboard`: Premium Streamlit UI application.
 - `/docker`: Specialized container definitions for Spark and Airflow.
 - `/scripts`: Support utilities for data validation.
+- `/docs`: **[NEW]** Comprehensive beginner-friendly documentation for every component.
 
 ---
 *Created with focus on Reliability, Scalability, and Visual Excellence.*
